@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*::selection {
+    background-color: transparent;
+}
+
+* {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    overflow: hidden;
+    display: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("map.jpg");
+    /* border-radius: 30px; */
+}
+
+.fa-map-marker-alt, .fa-map-marker {
+    position: absolute;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+    transition: font-size 0.25s;
+}
+
+.fa-map-marker-alt:hover, .fa-map-marker:hover {
+    font-size: xx-large;
+}
+
+.fa-map-marker-alt:active, .fa-map-marker:active {
+    color: rgb(110, 50, 160) 
+}
+
+.info-box {
+    display: none;
+    background-color: rgb(25, 25, 25);
+    position: absolute;
+    color: white;
+    font-size: small;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    width: 700%;
+    height: 150%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
+    text-align: center;
+    bottom: 105%;
+    left: -300%;
+    padding-top: 75%;
+}
+
+.play {
+    position: absolute;
+    width: 12%;
+    height: 4.5%;
+    left: 45%;
+    top: 90%;
+    text-align: center;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(25, 25, 25);
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    font-size: larger;
+    padding-bottom: 0.25%;
+    transition: transform .2s;
+}
+
+#lastpos {
+    position: absolute;
+    opacity: 0.0;
+    left: 90.50%;
+    top: 87.25%;
+    width: 1.5%;
+    height: 1.5%;
+}
+
+.lastpos-text {
+    position: absolute;
+    opacity: 0.0;
+    left: 10.35%;
+    top: 85.85%;
+    color: white; 
+}
+
+.play:focus {
+    outline: none;
+}
+
+.play:hover {
+    transform: scale(1.1);
+}
+
+#info {
+    left: 25%;
+    top: 25%;
+    color:rgb(0, 0, 0);
+    font-size: xx-large;
+}
+
+#loc0 { 
+    top: 42.5%;
+    left: 79%;
+}
+
+#loc1 { 
+    top: 25%;
+    left: 47%;
+}

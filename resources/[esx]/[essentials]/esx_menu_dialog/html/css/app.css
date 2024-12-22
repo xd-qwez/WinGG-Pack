@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	--bg: rgba(0, 0, 0, 0.5);
+	font-family: 'Poppins', sans-serif;
+	color: #fff !important;
+	border: 0 !important;
+	outline: 0 !important;
+}
+
+.dialog {
+	border-radius: 6px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	transform: translate(-50%, -50%);
+}
+
+.dialog.big {
+	height: 200px;
+}
+
+.dialog .head {
+	background-color: var(--bg);
+	text-align: center;
+	border-radius: 6px;
+	font-size: 16px;
+	margin-bottom: 6px;
+	height: 35px;
+	line-height: 35px;
+}
+
+.dialog .head span:before {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dialog input[type="text"] {
+	text-align: center;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: var(--bg) !important;
+	width: 100%;
+	height: 32px;
+}
+
+.dialog textarea {
+	text-align: center;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: var(--bg) !important;
+	width: 100%;
+	height: 32px;
+}
+
+.dialog button[name="submit"],
+.dialog button[name="cancel"] {
+	background-color: var(--bg) !important;
+	width: 50%;
+	height: 33px;
+}
+
+.dialog button[name="submit"] {
+	border-bottom-left-radius: 6px;
+}
+
+.dialog button[name="cancel"] {
+	border-bottom-right-radius: 6px;
+}
+
+.dialog button:hover {
+	background-color: rgba(255, 255, 255, .3) !important;
+}

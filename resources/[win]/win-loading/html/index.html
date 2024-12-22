@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body>
+<!-- BACKGROUND VIDEO -->
+<div id="overlay">
+<div class="fullscreen-bg">
+    <div id="player" class="fullscreen-bg__video"></div>
+</div>
+</div>
+<!-- END BG VIDEO -->
+<!-- LOGO -->
+<img src="assets/logo.png" alt="" />
+<!-- END LOGO -->
+<h1 class="enable_music">Naciśnij <strong>SPACJĘ</strong> aby przełączyć muzykę</h1>
+
+<script>
+    var player;
+    var isMuted = false;
+
+    // YouTube IFrame API ready function
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            videoId: 'UKWJtre3nEQ',  // ID filmu YouTube
+            playerVars: {
+                'autoplay': 1,
+                'controls': 0,
+                'start': 18,  // Rozpoczęcie od 18 sekundy
+                'loop': 1,
+                'playlist': 'UKWJtre3nEQ',  // Potrzebne do powtarzania wideo
+                'mute': 0,
+                'modestbranding': 1,
+                'showinfo': 0,
+                'rel': 0
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.setVolume(10); // Ustawienie głośności na 10%
+    }
+
+    // Funkcja do wyciszania/włączania dźwięku
+    function onKeyDown(event) {
+        if (event.keyCode === 32) { // SpaceBar
+            if (isMuted) {
+                player.unMute();
+                isMuted = false;
+            } else {
+                player.mute();
+                isMuted = true;
+            }
+        }
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+</script>
+
+</body>
+</html>

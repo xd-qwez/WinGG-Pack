@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  user-select: none;
+}
+
+.menu {
+  background-color: rgba(45, 50, 55, .95);
+  min-width: 300px;
+  color: #fff;
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu.align-left {
+  left: 30;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+  left: 30;
+  top: 30;
+}
+
+.menu.align-top {
+  left: 50%;
+  top: 30;
+  transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+  right: 30;
+  top: 30;
+}
+
+.menu.align-right {
+  right: 30;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+  right: 30;
+  bottom: 30;
+}
+
+.menu.align-bottom {
+  left: 50%;
+  bottom: 30;
+  transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+  left: 30;
+  bottom: 30;
+}
+
+.menu.align-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu .head {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 6px;
+  text-align: center;
+  border-bottom: solid 1px #ffffff40;
+}
+
+.menu .menu-items {
+  margin-top: 10px;
+  max-height: 500px;
+  overflow-y: hidden;
+}
+
+.menu .menu-items .menu-item {
+  display: block;
+  font-size: 14px;
+  line-height: 32px;
+  color: rgb(255, 255, 255);
+  padding: 0 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.menu .menu-items .menu-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.menu .menu-items .menu-item.selected {
+  border-radius: 10px;
+  border: solid 2px #b3b3b3;
+}
+
+input {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  background: none;
+  color: #4db347;
+  font-size: 14px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,296 @@
+{
+    "lang":"EN",
+    "__comment":"On DYNAMIC_FORM_DATA  do not change 'componentName',  'elementID'!",
+    "EN":{
+        "DYNAMIC_FORM_DATA":[
+            {
+                "componentName":"moreGraph",
+                "elementID":"#wrapper",
+                "title":"",
+                "closeButtonText":"Zamknij",
+                "bankTitle":"Fleeca Bank",
+                "mainExitButtonText": "Wyloguj"
+            },
+            {
+                "elementID":"#cpincode",
+                "name":"cpincode",
+                "buttonText":"Zatwierdź",
+                "inputPlaceholder": "Wprowadź 4 cyfry...",
+                "title":"USTAWIENIA KODU PIN",
+                "description": "Tutaj możesz ustawić lub zmienić kod PIN.",
+                "type":"password"
+            },
+            {
+                "elementID":"#withdraw",
+                "name":"withdraw",
+                "buttonText":"Zatwierdź",
+                "inputPlaceholder": "Kwota",
+                "title":"WYPŁAĆ",
+                "description": "Tutaj możesz wypłacić pieniądze z banku.",
+                "type":"number"
+            },
+            {
+                "elementID":"#deposit",
+                "name":"deposit",
+                "buttonText":"Zatwierdź",
+                "inputPlaceholder": "Kwota",
+                "title":"WPŁAĆ",
+                "description": "Tutaj możesz wpłacić swoje pieniądze do banku.",
+                "type":"number"
+            },
+            {
+                "elementID":"#transfer",
+                "name":"transfer",
+                "buttonText":"Przelej",
+                "inputPlaceholder": "Kwota",
+                "inputPlaceholder2": "ID Gracza",
+                "title":"PRZELEW",
+                "description": "Tutaj możesz przekazać swoje pieniądze komuś innemu."
+            },
+            {
+                "componentName":"trans",
+                "elementID":"#third-column",
+                "title":"HISTORIA TRANSAKCJI",
+                "description": "Tutaj możesz zobaczyć swoją historię transakcji.",
+                "moreHistoryText": "Pokaż więcej",
+                "moreGraphText": "Pokaż wykresy"
+            },
+            {
+                "componentName":"pincodePanel",
+                "elementID":"#wrapper",
+                "title":"Wprowadź PIN",
+                "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+                "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+                "closeButtonText": "Zamknij"
+            },
+            {
+                "componentName":"atmComponent",
+                "elementID":"#wrapper",
+                "title":"Fleeca Bank",
+                "closeButtonText":"Wyloguj"
+            }
+        ],
+        "LAUNGAGE": {
+            "your_money_title":"Saldo",
+            "your_money_desc":"Tutaj możesz zobaczyć swoje aktualne saldo i gotówkę.",
+            "your_money_cash_label":"Twoja gotówka",
+            "your_money_bank_label":"Twoje saldo bankowe",
+            "withdraw":"WYPŁAĆ",
+            "deposit":"WPŁAĆ",
+            "transfer":"PRZELEW",
+            "transferReceive":"OTRZYMANY PRZELEW",
+            "moneyFormat":"$__replaceData__",
+            "graphTitle":"Twój stan konta",
+            "moreGraphTitle": "Duży wykres",
+            "moreHistoryTitle":"Pokaż więcej",
+            "inputErrorTitle":"Dane są nieprawidłowe",
+            "inputErrorMessage":"Nie może być puste ani mieć wartości mniejszej niż 1!",
+            "showPincodeErrorTitle":"Nieprawidłowy PIN",
+            "showPincodeErrorMessage":"Kod PIN musi mieć co najmniej 4 znaki!",
+            "tableLang":{
+                "typeLabel": "Typ transakcji",
+                "balanceLabel":"Saldo",
+                "amountLabel":"Kwota",
+                "timeLabel":"Czas",
+                "searchInputPlaceholder":"Wyszukaj ...",
+                "_comment": "tableFullLanguage options: English,Hungarian you can find here all lang: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+                "tableFullLanguage":"Polish" 
+            }
+        }
+    },
+    "HU":{
+        "DYNAMIC_FORM_DATA":[
+            {
+                "componentName":"moreGraph",
+                "elementID":"#wrapper",
+                "title":"",
+                "closeButtonText":"Bezárás",
+                "bankTitle":"OTP BANK FELÜLET",
+                "mainExitButtonText": "Kijelentkezés"
+            },
+            {
+                "elementID":"#cpincode",
+                "name":"cpincode",
+                "buttonText":"Jóváhagyás",
+                "inputPlaceholder": "Írj be 4 számot...",
+                "title":"PIN KÓD BEÁLLÍTÁS",
+                "description": "Itt tudod beállítani vagy cserélni pinkódodat.",
+                "type":"password"
+            },
+            {
+                "elementID":"#withdraw",
+                "name":"withdraw",
+                "buttonText":"Jóváhagyás",
+                "inputPlaceholder": "Összeg",
+                "title":"PÉNZ KIVÉTEL",
+                "description": "Itt tudsz pénzt kivenni a számládról.",
+                "type":"number"
+            },
+            {
+                "elementID":"#deposit",
+                "name":"deposit",
+                "buttonText":"Jóváhagyás",
+                "inputPlaceholder": "Összeg",
+                "title":"PÉNZ BETÉTEL",
+                "description": "Itt tudsz pénzt be tenni a számládra.",
+                "type":"number"
+            },
+            {
+                "elementID":"#transfer",
+                "name":"transfer",
+                "buttonText":"Utalás",
+                "inputPlaceholder": "Összeg",
+                "inputPlaceholder2": "Játékos azonosító",
+                "title":"UTALÁS",
+                "description": "Itt tudsz pénzt utalni egy adott játékosnak."
+            },
+            {
+                "componentName":"trans",
+                "elementID":"#third-column",
+                "title":"SZÁMLA TÖRTÉNET",
+                "description": "Itt látod a számla történeted.",
+                "moreHistoryText": "Több számla történet mutatása",
+                "moreGraphText": "Nagyított diagram mutatása"
+            },
+            {
+                "componentName":"pincodePanel",
+                "elementID":"#wrapper",
+                "title":"Írd be a PIN kódod",
+                "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+                "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+                "closeButtonText": "Bezárás"
+            },
+            {
+                "componentName":"atmComponent",
+                "elementID":"#wrapper",
+                "title":"OTP BANK",
+                "closeButtonText":"Kijelentkezés"
+            }
+            
+        ],
+        "LAUNGAGE": {
+            "your_money_title":"Egyenleged",
+            "your_money_desc":"Itt láthatod a jelenlegi egyenleged és készpénzed.",
+            "your_money_cash_label":"Készpénz",
+            "your_money_bank_label":"Banki egyenleged",
+            "withdraw":"KIVÉTEL",
+            "deposit":"BETÉTEL",
+            "transfer":"UTALÁS",
+            "transferReceive":"KAPOTT UTALÁS",
+            "moneyFormat":"__replaceData__ Ft",
+            "graphTitle":"Egyenleged",
+            "moreGraphTitle": "Nagyított grafikon",
+            "moreHistoryTitle":"Teljes számla történet",
+            "inputErrorTitle":"Adat hibás",
+            "inputErrorMessage":"Nem lehet üres vagy érték kisebb mint 1!",
+            "showPincodeErrorTitle":"PIN hibás",
+            "showPincodeErrorMessage":"Legalább 4 karakternek kell lennie a pinnek!",
+            "tableLang":{
+                "typeLabel": "Tranzakció típus",
+                "balanceLabel":"Egyenleged",
+                "amountLabel":"Összeg",
+                "timeLabel":"Idő",
+                "searchInputPlaceholder":"Kereső ...",
+                "_comment": "tableFullLanguage options: English,Hungarian you can find here all lang: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+                "tableFullLanguage":"Hungarian" 
+            }
+        }
+    },
+    "IT":{
+        "DYNAMIC_FORM_DATA":[
+            {
+                "componentName":"moreGraph",
+                "elementID":"#wrapper",
+                "title":"",
+                "closeButtonText":"Close",
+                "bankTitle":"Fleeca Bank",
+                "mainExitButtonText": "Disconnettersi"
+            },
+            {
+                "elementID":"#cpincode",
+                "name":"cpincode",
+                "buttonText":"conferma",
+                "inputPlaceholder": "4 cifre...",
+                "title":"IMPOSTAZIONE CODICE PIN",
+                "description": "Qui puoi impostare o modificare il codice PIN.",
+                "type":"password"
+            },
+            {
+                "elementID":"#withdraw",
+                "name":"withdraw",
+                "buttonText":"conferma",
+                "inputPlaceholder": "Quantità",
+                "title":"RITIRARE",
+                "description": "Qui puoi prelevare i tuoi soldi dalla banca.",
+                "type":"number"
+            },
+            {
+                "elementID":"#deposit",
+                "name":"deposit",
+                "buttonText":"conferma",
+                "inputPlaceholder": "Quantità",
+                "title":"DEPOSITARE",
+                "description": "Qui puoi depositare i tuoi soldi in banca.",
+                "type":"number"
+            },
+            {
+                "elementID":"#transfer",
+                "name":"transfer",
+                "buttonText":"trasferisci",
+                "inputPlaceholder": "Quantità",
+                "inputPlaceholder2": "Giocatore ID",
+                "title":"TRASFERIMENTO",
+                "description": "Qui puoi trasferire i tuoi soldi a qualcun altro."
+            },
+            {
+                "componentName":"trans",
+                "elementID":"#third-column",
+                "title":"CRONOLOGIA DELLE TRANSAZIONI",
+                "description": "Qui puoi vedere la cronologia delle tue operazioni.",
+                "moreHistoryText": "Mostra più cronologia",
+                "moreGraphText": "Mostra tutto il grafico"
+            },
+            {
+                "componentName":"pincodePanel",
+                "elementID":"#wrapper",
+                "title":"Enter PIN",
+                "deleteButtonText": "<i class='fa-solid fa-ban'></i>",
+                "loginButtonText": "<i class='fa-solid fa-right-to-bracket'></i>",
+                "closeButtonText": "Close"
+            },
+            {
+                "componentName":"atmComponent",
+                "elementID":"#wrapper",
+                "title":"Fleeca Bank",
+                "closeButtonText":"Disconnettersi"
+            }
+        ],
+        "LAUNGAGE": {
+            "your_money_title":"saldo",
+            "your_money_desc":"qui puoi vedere il saldo attuale e contanti.",
+            "your_money_cash":"i tuoi soldi",
+            "your_money_bank":"il tuo saldo bancario",
+            "withdraw":"RITIRARE",
+            "deposit":"DEPOSITARE",
+            "transfer":"TRASFERIMENTO",
+            "transferReceive":"TRASFERIMENTO RICEVUTO",
+            "moneyFormat":"$__replaceData__",
+            "graphTitle":"Il tuo bilancio",
+            "moreGraphTitle": "grafico",
+            "moreHistoryTitle":"Mostra la cronologia",
+            "inputErrorTitle":"I dati non sono corretti",
+            "inputErrorMessage":"Non può essere vuoto o un valore inferiore a 1!",
+            "showPincodeErrorTitle":"PIN errato",
+            "showPincodeErrorMessage":"Il pin deve contenere almeno 4 caratteri!",
+            "tableLang":{
+                "typeLabel": "Tipo di transazione",
+                "balanceLabel":"bilancio",
+                "amountLabel":"quantità",
+                "timeLabel":"tempo",
+                "searchInputPlaceholder":"Cerca ...",
+                "_comment": "tabella Opzioni complete della lingua: inglese, ungherese, italiana puoi trovare qui tutte le lingue: https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/",
+                "tableFullLanguage":"Italiano" 
+            }
+        }
+    }
+}

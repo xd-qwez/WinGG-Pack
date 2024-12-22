@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.7.3/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <canvas id="game" width="960" height="540"></canvas>
+
+        <div id="notifications-wrapper"></div>
+        <div id="progress-wrapper"></div>
+
+        <div id="watermark">
+            <img src="images/logo.png">
+            <div class="win">
+                <div class="flex">
+                    <p id="player-id">N/A</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="player-hud-wrapper">
+            <div id="new-hud-content">
+                <div id="new-hud-wrapper"></div>
+            </div>
+            <div id="old-hud-content">
+                <div id="old-hud-wrapper"></div>
+            </div>
+        </div>
+
+        <div id="top-organizations-box">
+            <div class="top-organizations-wrapper">
+                <div class="panel">
+                    <h1><i class="fa-solid fa-gun"></i>Bitki</h1>
+                    <div class="bitki" id="btk"></div>
+                    <div class="rankingtwojamama" id="btk-me"></div>
+                </div>
+    
+                <div class="panel">
+                    <h1><i class="fa-solid fa-flag-swallowtail"></i>Przejęcia stref</h1>
+                    <div class="strefy" id="stf"></div>
+                </div>
+
+                <div class="panel">
+                    <h1><i class="fa-solid fa-user"></i>Ranking</h1>
+                    <div class="users" id="usr"></div>
+                    <div class="rankingtwojamama" id="usr-me"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="death-screen">
+            <div class="death-screen" id="death-screen-wrapper">
+                <div class="death-screen-container" id="bw-container"></div>
+            </div>
+        </div>
+
+        <div class="streetlabel">
+                <p class="street">Los Santos Freeway</p>
+                <p class="direction">N</p>
+        </div>
+
+        <div class="speedometer">
+            <svg viewBox="0 0 36 36" class="speedometer-part black">
+            <path class="circle" stroke-dasharray="65, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <svg viewBox="0 0 36 36" class="speedometer-part">
+            <path class="circle speed" stroke-dasharray="0, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <svg viewBox="0 0 36 36" class="speedometer-part tacho">
+            <path class="circle" stroke-dasharray="65, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <div class="speedometer-digital">
+                <p class="speed-digital">000</p>
+                <p class="speed-unit">KPH</p>
+            </div>
+        </div>
+
+        <div id="scoreboard-wrapper">
+            <div class="container">
+                <img src="images/logo.png">
+                <div class="stats">
+                    <ul class="jobs">
+                        <li>
+                            <span class="job-title"><i class="fas fa-user"></i>Organizacja:</span>
+                            <span id="job" class="job-name">Brak</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="players-title"><i class="fas fa-user-group"></i>Gracze:</span>
+                            <span id="players" class="players-count">0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="pause-wrapper">
+            <div class="left-column">
+                <img src="images/logo.png">
+                <button id="return"><i class="fa-solid fa-rotate-left"></i>Powrót</button>
+                <button id="map"><i class="fa-solid fa-map"></i>Mapa</button>
+                <button id="settings"><i class="fa-solid fa-gear"></i>Ustawienia</button>
+                <button id="discord"><i class="fa-brands fa-discord"></i>Discord</button>
+            </div>
+        </div>
+
+        <div id="garage-container">
+            <div class="garage-wrapper flex-center">
+                <div id="garage-box"> 
+                    <div class="garage-header flex-center">
+                        <span id="garage-header-text">Garaż</span>
+                        <span id="garage-header-vehicles">Pojazdy - N/A</span>
+                        <div id="garage-close-button" class="flex-center"><i class="fa-regular fa-xmark"></i></div>
+                    </div>
+                    <div class="garage-content">
+                        <div class="garage-content-header flex-center" style="justify-content: center;">
+                            <div class="garage-car-button-header flex-center">
+                                <i id="garage-car-search-button" class="fa-solid fa-magnifying-glass"></i>
+                                <input id="garage-car-search-input" placeholder="Znajdź pojazd">
+                            </div>
+                            
+                            <div id="garage-impound-all" class="garage-car-button-header flex-center">
+                                <i class="fa-solid fa-cars"></i>
+                                <p class="garage-car-impound-all-text">Odholuj wszystkie pojazdy</p>
+                            </div>
+                        </div>
+                        <div id="garage-cars"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="RadioList">
+            <div class="RadioListTop">
+                <div class="nigga">
+                    <i style="position: relative; bottom: 1.2px;" class="fa-solid fa-walkie-talkie"></i><span style="margin-left: 7px; margin-right: 5px;" id="Frequency">Radio: 0</span>
+                </div>
+                <!-- <br> -->
+                <div class="nigga">
+                    <i style="position: relative; bottom: 1px;" class="fa-solid fa-users" ></i><span style="margin-right: 3px;" id="Active">Osoby: 0</span>
+                </div>
+            </div>
+            <hr>
+            <div id="PersonList">
+            </div>
+        </div>
+
+        <style>
+            .RadioList {
+                position: absolute;
+                padding: 1.5vh;
+                border-radius: 0 10px 10px 0;
+                left: 0;
+                top: 40%;
+                width: fit-content;
+                background-color: rgba(45, 50, 55, .95);
+                
+            }
+        
+            .RadioListTop {
+                display: flex;
+            }
+        
+            .nigga {
+                background-color: rgb(124, 124, 124, 0.7);
+                border-radius: 5px;
+                padding: 4px;
+                display: flex;
+                align-items: center;
+                margin-right: 7px;
+            }
+            
+            #Active {
+                margin-left: 5px;
+            }
+        
+            #Badge {
+                margin-left: 5px;
+                float: right;
+                color: grey;
+            }
+        
+            #Name {
+                margin-left: 4px;
+            }
+        
+            .User {
+                margin-top: 1vh;
+                color: rgb(255, 255, 255);
+            }
+        </style>
+        <script>
+            window.addEventListener("message", (event) => {
+                switch(event.data.type) {
+                    case 'radio-ShowUI':
+                        $(".RadioList").fadeIn(150);
+                        setTimeout(() => {
+                            $(".RadioList").show();
+                        }, 150);
+                        document.getElementById("Frequency").textContent = 'Kanał: ' + event.data.channel;
+                        document.getElementById("Active").textContent = 'Osoby: ' + event.data.count;
+                        UpdateList(event.data.players);
+                        break;
+                    case 'radio-HideUI':
+                        $(".RadioList").fadeOut(150);
+                        setTimeout(() => {
+                            $(".RadioList").hide();
+                        }, 150);
+                }
+
+                function UpdateList(players) {
+                    let PlayerList = '';
+                    for (let i in players) {
+                        let data = players[i];
+                        let name = data.player;
+                        let badge = data.badge;
+                        let talking = data.isTalking;
+                        let isDead = data.isDead;
+
+                        // Sprawdź, czy gracz jest martwy i dodaj ikonę czaszki
+                        let skullIcon = isDead ? '<i class="fa-solid fa-skull" style="color: #ff4d4d; margin-right: 5px;"></i>' : '';
+
+                        if (talking == true) {
+                            PlayerList += `<div class="User" id="User">
+                                            <i style="color: rgb(2, 182, 2);" class="fa-solid fa-microphone"></i> 
+                                            <span id="Name">${skullIcon}${name}</span>
+                                            <span id="Badge">[${badge}]</span>
+                                        </div>`;
+                        } else {
+                            PlayerList += `<div class="User" id="User">
+                                            <i style="color: red;" class="fa-solid fa-microphone"></i> 
+                                            <span id="Name" style="color: white;">${skullIcon}${name}</span>
+                                            <span id="Badge">[${badge}]</span>
+                                        </div>`;
+                        }
+                    }
+                    document.getElementById("PersonList").innerHTML = PlayerList;
+                }
+            })
+        </script>
+    </body>
+</html>

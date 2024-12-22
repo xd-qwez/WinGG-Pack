@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.menu {
+	opacity: 0.85;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	overflow-y: auto;
+	max-height: 90%;
+	color: #fff !important;
+	text-transform: none !important;
+}
+
+.menu button {
+	font-size: 14px !important;
+	font-family: 'Poppins', sans-serif;
+	background: none;
+	color: #fff;
+	outline: none;
+	background-color: #ffffff23;
+  	border-radius: 5px;
+	border-color: transparent;
+	text-transform: none !important;
+}
+
+.menu>table {
+	border-spacing: 0;
+	min-width: 400px;
+	background-color: transparent;
+}
+
+.menu>table>thead {
+  	font-family: 'Poppins', sans-serif;
+	background: rgb(21, 21, 21);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, rgb(20, 20, 20), rgb(21, 21, 21));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgb(21, 21, 21), rgba(21, 21, 21)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	font-weight: 900;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+}
+
+.menu td {
+	font-size: 14px;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+}
+
+.menu tbody tr:nth-child(even) {
+	color: #fff !important;
+	background-color: rgb(20, 20, 20) !important;
+}
+
+.menu tbody tr:nth-child(odd) {
+	color: #fff !important;
+	background-color: rgb(21, 21, 21) !important;
+}

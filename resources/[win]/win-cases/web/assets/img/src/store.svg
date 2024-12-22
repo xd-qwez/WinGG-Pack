@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58333"
+   version="1.1"
+   id="svg976"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="Sklep.svg"
+   inkscape:export-filename="C:\Users\PC\Desktop\Ikony\Kontrakt.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs970" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.11104564"
+     inkscape:cx="34.51737"
+     inkscape:cy="-985.66036"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-page="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata973">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-32.416684)">
+    <g
+       style="fill:#50a3f6;fill-opacity:1"
+       id="g2285-6"
+       transform="matrix(3.0701673,0,0,3.0701673,2982.7178,36.954548)">
+      <g
+         style="fill:#50a3f6;fill-opacity:1"
+         transform="translate(-34.089065)"
+         id="g2237-2" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#50a3f6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:18.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m -8.3667883e-4,54.034795 v 18.50014 H 23.793963 h 4.9104 l 12.9391,36.829785 11.4666,32.64091 H 252.59506 l 11.4664,-32.64091 a 9.250925,9.250925 0 0 0 -8.7267,-12.316535 H 56.924763 l -12.9373,-36.82981 a 9.250925,9.250925 0 0 0 -8.7286,-6.18358 h -11.4649 z M 59.609263,160.50528 l 13.6205,38.77179 a 9.250925,9.250925 0 0 0 0.01,0.018 l 10.0092,28.28716 a 25.419916,25.419916 0 0 0 -13.4094,22.37952 25.419916,25.419916 0 0 0 25.4196,25.42016 25.419916,25.419916 0 0 0 25.420097,-25.42016 25.419916,25.419916 0 0 0 -0.9668,-6.92052 h 63.4333 a 25.419916,25.419916 0 0 0 -0.9845,6.92052 25.419916,25.419916 0 0 0 25.4201,25.42016 25.419916,25.419916 0 0 0 25.4199,-25.42016 25.419916,25.419916 0 0 0 -25.4199,-25.41963 25.419916,25.419916 0 0 0 -0.5223,0.0185 9.250925,9.250925 0 0 0 -0.6982,-0.019 H 101.79836 L 95.045163,205.45956 H 223.75166 a 9.250925,9.250925 0 0 0 8.7265,-6.1836 l 13.6205,-38.77178 z"
+       id="rect888-0" />
+  </g>
+</svg>
